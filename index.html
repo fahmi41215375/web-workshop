@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AirNet Twitter</title>
+        <link
+            rel="shortcut icon"
+            href="./airnet (1).jpeg"
+            type="image/x-icon"
+        />
+
+        <!-- Tailwind -->
+        <link rel="stylesheet" href="./src/css/output.css" />
+
+        <!--fontawesome-->
+        <linkhttps://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css/>
+
+        <!-- Alpine JS -->
+        <script src="//unpkg.com/alpinejs" defer></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body
+        class="flex min-h-screen items-center justify-center bg-primary-dark-100 text-white"
+    >
+        <div class="mx-auto h-[40vh] w-[460px] rounded-lg bg-primary-dark-200">
+            <div class="flex w-full items-center justify-between p-3">
+                <div>
+                    <img
+                        src="./WhatsApp Image 2024-06-29 at 15.23.42_a2e66d55.jpg"
+                        alt="famhi"
+                        class="h-[60px] w-[60px] rounded-full"
+                    />
+                </div>
+                <div>
+                    <h2>New Fahmi Naufal Chotamboy</h2>
+                    <small>@fahmi_naufal31</small>
+                </div>
+                <div>
+                    <i><i class="fa-brands fa-x-twitter text-4xl"></i></i>
+                </div>
+            </div>
+
+            <div class="w-full p-3">
+                Co-Founder di AirNet Teknologi dengan keahlian dalam industri
+                teknologi informasi dan konsultasi komputer.
+                <p class="text-blue-400">
+                    #wifi_voucher #teknisi_komputer #AirNet.
+                </p>
+            </div>
+
+            <div class="flex w-full items-center gap-2 p-5 text-gray-100" x-data="
+            {
+                totalLikes:699
+            }">
+                <i
+                    class="fa-solid fa-heart duration-900 w-[30px] cursor-pointer text-red-600 hover:brightness-[400%] active:scale-[0.98]"
+                    @click="totalLikes++"
+                ></i>
+                <p class="text-white/60" x-text="totalLikes"></p>
+                <p class="text-white/60">8:0 PM - June 30, 2024</p>
+            </div>
+        </div>
+    </body>
+</html>
